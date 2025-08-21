@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/stylesheet.css">
+  <link rel="stylesheet" href="styles/media-queries.css">
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  <title>Login</title>
+</head>
+<body>
+  <main>
+    <section id="login">
+      <div id="image"></div>
+
+      <div id="form">
+        <h1>
+          Login
+        </h1>
+
+        <p>
+          Seja bem-vindo(a) novamente. Faça login para acessar sua conta e
+          poder fazer as configurações no seu perfil.
+        </p>
+
+        <form action="login.js" method="post" autocomplete="on">
+          <div class="campo">
+
+                          <span class="material-symbols-outlined">person</span>
+
+            <label for="iemail">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" name="email" id="iemail" autocomplete="email">
+
+          </div>
+
+          <div class="campo">
+
+            <span class="material-symbols-outlined">key</span>
+
+            <label for="isenha">Senha</label>
+            <input type="password" placeholder="Digite sua senha" name="senha" id="isenha" minlength="8" maxlength="20" autocomplete="current-password">
+
+          </div>
+
+          <input type="submit" value="Entrar">
+
+          <a href="esqueci-senha.js">Esqueci minha senha</a>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
